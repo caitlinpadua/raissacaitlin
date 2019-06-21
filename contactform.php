@@ -47,24 +47,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Paste mail function or whatever else you want to happen here!
         echo '<br><p>CAPTCHA was completed successfully!</p><br>';
     }
-} else {
-
-if(isset($_POST['submit'])) 
-{
-    $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $mailFrom = $_POST['mail'];
-    $message = $_POST['message'];
-
-
-    $mailTo = "raissacaitlinp@gmail.com";
-    $header = "From my wesite: ".$mailFrom;
-    $text = "You have received a message from ".$name.".\n\n".$message;
-
-
-    mail($mailTo, $subject, $text, $header);
-
-
 }
-
 ?>
