@@ -4,7 +4,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     function post_captcha($user_response) {
         $fields_string = '';
         $fields = array(
-            'secret' => '6Ld29akUAAAAAG2r3E1_5GQzEzsy7sx-SFqQYvdf',
+            // 'secret' => '6Ld29akUAAAAAG2r3E1_5GQzEzsy7sx-SFqQYvdf',
+            'secret' =>'918a2303b49c9aabea9b162e783a1b17d36da980',
             'response' => $user_response
         );
         foreach($fields as $key=>$value)
@@ -45,6 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         mail($mailTo, $subject, $text, $header);
 
         // Paste mail function or whatever else you want to happen here!
+        header("Location: index.html?sent");
         echo '<br><p>CAPTCHA was completed successfully!</p><br>';
     }
 }
