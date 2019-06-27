@@ -68,6 +68,7 @@ i, span {
 
 a[data-toggle="collapse"] {
   position: relative;
+  background: #000;
 }
 
 ul ul a {
