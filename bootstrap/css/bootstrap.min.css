@@ -3205,7 +3205,6 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    background: coral;
 }
 .nav-link {
     display: block;
