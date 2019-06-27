@@ -61,12 +61,8 @@ i, span {
   margin-right: 10px;
 }
 
-#sidebar ul li > a, a[aria-expanded="true"] {
+#sidebar ul li.active > a, a[aria-expanded="true"] {
   color: #fff;
-}
-
-.active {
-  background: #000;
 }
 
 a[data-toggle="collapse"] {
