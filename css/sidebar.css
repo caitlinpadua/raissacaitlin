@@ -63,6 +63,7 @@ i, span {
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
   color: #fff;
+  
 }
 
 a[data-toggle="collapse"] {
@@ -137,8 +138,4 @@ ul ul a {
   #sidebarCollapse span {
     display: none;
   }
-}
-
-.active {
-  background: #e6e6e6;
 }
