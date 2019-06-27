@@ -3253,7 +3253,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background: #007bff;
+    background: #000;
 }
 .nav-fill .nav-item {
     -ms-flex: 1 1 auto;
@@ -3316,7 +3316,6 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    background: #000000;
 }
 .navbar-nav .nav-link {
     padding-right: 0;
