@@ -3205,6 +3205,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    background: #000000;
 }
 .nav-link {
     display: block;
@@ -3283,7 +3284,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: .5rem 1rem;
-    background: #000000;
+
 }
 .navbar>.container, .navbar>.container-fluid {
     display: -ms-flexbox;
@@ -3315,6 +3316,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    background: #000000;
 }
 .navbar-nav .nav-link {
     padding-right: 0;
