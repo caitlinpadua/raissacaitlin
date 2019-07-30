@@ -3351,7 +3351,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 .navbar-toggler-icon {
   margin-top: 5px;
-    display: inline-block;
+    display: block;
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
