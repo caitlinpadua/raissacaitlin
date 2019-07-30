@@ -1,12 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 #navigation {
-  background: #000;
+  background: #fff;
   background-size: auto;
   background-repeat: no-repeat;
-  height: 50px;
+  height: 60px;
   position: fixed;
   top: 0;
   width: 100%;
 }
+
 
 
 #portfolio {
@@ -25,7 +30,6 @@
 
 #works {
   background:#ffffff;
-  /* margin: 0 auto; */
   padding-top: 80px;
   height: 100%;
   width: auto;
@@ -36,7 +40,7 @@
   margin: 10px;
   display: block;
   width: 320px;
-  height: 430px;
+  height: 400px;
   /* background:#f2f2f2; */
   background: #000;
   border-radius: 20px;
@@ -66,25 +70,23 @@ li {
 
 }
 li:hover {
-  border-bottom: 3px solid #ffffff;
-}
-
-#menu {
-  color: #ffffff;
+  border-bottom: 3px solid #000000;
 }
 
 img {
   margin-left: 0px;
   margin-top: 0px;
-  /* margin: 10px auto; */
   padding: 10px;
-  width: 300px;
+  width: 320px;
   height: 300px;
   border-radius: 20px;
-  /* border: 2px solid #fff; */
   box-shadow: 0 0 0 15px white inset;
-  /* border: 2px solid #000; */
 }
+
+.btn.btn-link.btn-block.btn-lg.d-block.arrow-btn {
+  color: #fff;
+}
+
 
 #wrapper {
   height: 100%;
@@ -103,7 +105,19 @@ a:visited {
   color:#000;  
 }
 
-/* a:hover {
-  background: #8c8c8c;
-} */
+#menu{
+  color: #000; 
+  background: #fff;
+  
+}
+
+
+@media screen and (max-width: 600px) {
+
+  #wrapper {
+    width: 100%;
+    margin-left: 50px;
+    padding: 20px;
+  }
+}
 

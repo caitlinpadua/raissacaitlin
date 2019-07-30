@@ -3,35 +3,46 @@
   height: 700px;
 }
 
-body {
-  background: #141E30;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+* {
+  box-sizing: border-box;
 }
 
+body {
+  /* background: #141E30;  
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+  background: linear-gradient(to right, #243B55, #141E30);  */
+
+  background: url("../img/bcg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+b{
+  color: #4189B7 !important;
+}
+
+
 #header {
+  
   margin: 0;
   width: auto;
   height: 100vh;
-  background: #141E30;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 #title {
   margin-left: 50px;
-  color: #ffffff;
+  color: #000;;
   font-size: 70px;
   font-family: 'Viga', sans-serif;
   text-align: left;
+  padding-top: 100px;
 }
 
 
 #subtitle {
   margin: 50px 50px;
-  color: #fff;
+  color: #000;
   text-align: justify;
   /* font-family: Abel, sans-serif; */
   font-family: Raleway, sans-serif;
@@ -47,12 +58,13 @@ body {
 #bottom {
   padding-top: 50px;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
 #about-me {
   background-color: #ffffff;
   height: 100vh;
+  padding-top: 100px;
 }
 
 #description {
@@ -68,65 +80,59 @@ body {
   margin-top: 30px;
 }
 
-/*
-#skills {
-  margin-top: 30px;
+.column {
   float: left;
-  display: block;
-  border: 1px solid red;
+  width: 50%;
+  height: 100vh;
+  padding: 10px;
+  }
 
+.row {
+  height: 100vh;
 }
-*/
+
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
 
 /* mobile version */
-/*
-@media (min-width: 375px) {
-#intro {
-  margin-top: 30px;
-  float: left;
-  display: block;
-  border: 1px solid blue;
-  width: 370px;
-  height: 400px;
+@media screen and (max-width: 600px) {
+body {
+  background: url("../img/mobile-version.png");
+  background-repeat: no-repeat;
+  background-origin: initial;
+  background-size: contain; 
+  background-color:#f2f2f2;
+}
+
+
+.column  {
+  width: 100%;
+  margin: 0 auto;
+  height: 600px;
+  padding: 20px;
+  background-color:#f2f2f2;
+  }
+
+  #about-me {
+    background-color:#f2f2f2;
+    height: 100vh;
+    padding-top: 50px;
+
+  }
+  .read-more {
+    width: 100%;
+    margin-left: 200px;
+    margin-top: -150px;
+    text-align: center;
+    float: right;
   }
 }
-*/
 
-#intro {
-  margin-top: 30px;
-  float: left;
-  display: block;
-  border: 1px solid blue;
-  width: 300px;
-  height: 400px;
-  }
-/*
-#para {
-  text-align: center;
-  height: auto;
-  width: 300px;
-  border: 1px solid red;
-/*   padding-top: 20px; */
-  font-size: 15px;
-  line-height: 2;
-}
-*/
-#descrp {
-  font-size: 35px;
-}
 
-#horizontal-line {
-  width: 300px;
-  color: #000;
-  height: 5px;
-  margin: 0 auto;
-  background-color: #474444;
-}
 
-#abtme {
-  margin-top: 35px;
-  margin: 0 auto;
-}
 
 #name {
   font-family: Raleway, sans-serif;
@@ -141,36 +147,9 @@ p {
   font-size: 15px;
 }
 
-#me {
-  margin-top: 30px;
-}
-
-#image {
-  background-position: center;
-  max-width: 400px;
-}
-
-#mypic {
-  width: 200px;
-  display: block;
-  margin: auto;
-}
-
-#skillsz {
-  margin-top: 20px;
-  font-size: 50px;
-}
-
-#navigation-hidden {
-}
 
 #skill {
   margin-top: 40px;
-}
-
-#logo {
-  color: rgb(163,21,12);
-  font-size: 45px;
 }
 
 #about-heading {
@@ -185,17 +164,6 @@ p {
 #skillss {
   width: 100%;
   height: 100vh;
-}
-
-#code-logo {
-  color: rgb(0,0,0);
-  font-size: 50px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-#technical-skills {
-  margin-top: 30px;
 }
 
 
@@ -218,13 +186,10 @@ p {
 }
 
 #navigation {
-  
-  background: #141E30; 
-  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fff;
   background-size: auto;
   background-repeat: no-repeat;
-  height: 40px;
+  height: 60px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -236,7 +201,9 @@ p {
 }
 
 #menu{
-  color: #ffffff; 
+  color: #000; 
+  background: #fff;
+  
 }
 
 li {
@@ -244,7 +211,7 @@ li {
 
 }
 li:hover {
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 3px solid #000;
 }
 
 
@@ -254,8 +221,7 @@ li:hover {
   /* height: auto; */
   /* display: inline-block; */
   /* background: #e4e4e4; */
-  padding-top: 40px;
-  border: 1px solid coral;
+  padding-top: 10px;
 }
 
 #sk {
@@ -292,70 +258,25 @@ li:hover {
 
 #para {
   text-align: justify;
-  height: 50px;
-  width: 50%;
+  height: 100px;
+  width: 80%;
   margin: 0 auto;
   padding-top: 80px;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 2;
 }
 
-.de {
-  margin-top: 20px;
-  text-align: justify;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
 
 .container #technicalsk {
   max-width: 600px;
 }
 
-#skillsy .stuff {
-}
-
-.col-md-4.stuff {
-  margin-top: 40px;
-}
-
-.col-md-4.stuff2 {
-  margin-top: 40px;
-}
-
-.col-md-4.stuff3 {
-  margin-top: 40px;
-}
-
-#skillsx {
-  height: 400px;
-  margin-top: 40px;
-}
 
 #aboutme {
   margin: 0 auto;
   height: 100px;
   margin-top: 30px;
   max-width: 300px;
-}
-
-#horizontal-line-longer {
-  width: 500px;
-  color: #000;
-  height: 5px;
-  margin: 0 auto;
-  background-color: #474444;
-}
-
-.container.skill {
-  height: 109px;
-  min-height: 1px;
-  margin: 30px 0 0;
-  margin-top: 30px;
-}
-
-.container.skill-3 {
-  margin-top: 100px;
 }
 
 .logo {
@@ -367,25 +288,3 @@ li:hover {
 .list-item {
   text-align: center;
 }
-
-/*
-@media (min-width: 300px) {
-  .col-md-4.column {
-  }
-}
-
-@media (min-width: 300px) {
-  .col-md-4 {
-  }
-}
-
-@media (min-width: 300px) {
-  .col-md-4 {
-  }
-}
-*/
-
-.container.work-stuff {
-  margin-top: 30px;
-}
-
