@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    overflow: hidden;
   }
 
 .btn.btn-link.btn-block.btn-lg.d-block.arrow-btn {

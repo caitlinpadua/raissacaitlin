@@ -9,10 +9,6 @@
 }
 
 body {
-  /* background: #141E30;  
-  background: -webkit-linear-gradient(to right, #243B55, #141E30);  
-  background: linear-gradient(to right, #243B55, #141E30);  */
-
   background: url("../img/bcg.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -97,38 +93,32 @@ b{
   clear: both;
 }
 
+div {
+  display: block; 
+}
+
 /* mobile version */
-@media screen and (min-width: 300px){
+@media screen and (max-width: 500px){
   body {
     background: url("../img/x-xs.png");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-origin: initial;
+    background-size: contain; 
     background-color:#f2f2f2;
-    height: 99vh;
-    overflow: hidden;
-  }
-}
-
-@media screen and (min-width: 400px){
-  body {
-    background: url("../img/xr-xsmax.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-color:#f2f2f2;
-    height: 99vh;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 
 @media screen and (max-width: 600px) {
 body {
-  background: url("../img/mobile-version.png");
-  background-size: cover; 
+  background: url("../img/bcg.png");
   background-repeat: no-repeat;
+  background-size: cover; 
   background-color:#f2f2f2;
-  height: 99vh;
   -webkit-overflow-scrolling: touch;
-  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 99vh;
 }
 
 
@@ -245,7 +235,7 @@ li:hover {
   /* height: auto; */
   /* display: inline-block; */
   /* background: #e4e4e4; */
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 #sk {
